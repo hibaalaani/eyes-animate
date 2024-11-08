@@ -8,7 +8,7 @@ import Experience from "./Experience";
 import WigglyBackground from "../components/WigglyBackground";
 import Ilistra from "../assets/woman.jpg"
 import FaceSvg from "./FaceSvg";
-
+import Typical from 'react-typical';
 const LandingPage = () => {
   useEffect(() => {
     const face = document.getElementById("face");
@@ -69,40 +69,41 @@ const LandingPage = () => {
 
 
  
-<section className="fade-in container mx-auto flex flex-col items-start justify-center min-h-screen p-10">
+<section className="fade-in container mx-auto flex flex-col items-start justify-center min-h-screen p-15">
   <div className="flex flex-col md:flex-row items-center items-center space-x-10">
              {/* Right Image Section */}
-        <div className="relative w-100 h-100 md:w-80 md:h-80">
+        <div className="relative w-1/2 h-1/2 md:w-80 md:h-80">
           {/* Illustration */}
           <img
             src={HeroImage} // Replace with actual path
-            alt="Illustration of Hiba"
+            alt="Img of Hiba"
             className="w-full h-full"
             id="face"
           />
          
-      {/* Eyes */}
-{/* <div
-  id="left-eye"
-  className="absolute bg-red-300 rounded-full w-5 h-5"
-  style={{ top: '40%', left: '35%' }}
-></div>
-<div
-  id="right-eye"
-  className="absolute bg-red-300 rounded-full w-5 h-5"
-  style={{ top: '40%', left: '60%' }}
-></div> */}
+     
 
       </div>
-                <div className="flex-1 text-left space-y-5 p-6 bg-opacity-30 rounded-xl">
-                    <h1 className="text-4xl md:text-5xl font-extrabold leading-tight text-white">
-                        Hi, I'm Hiba Alaani
-                    </h1>
-                    <p className="text-lg md:text-xl font-light text-gray-200">
-                        A passionate Web Developer & Designer who brings creativity to code.
-                    </p>
+                <div className="flex-1 text-left space-y-5 p-6 bg-opacity-30 rounded-xl text-white">
+                <h1 className="text-5xl font-bold">
+            <Typical steps={['Hi, I\'m Hiba Alaani', 1000]} wrapper="span" />
+          </h1>
+          <p className="text-xl mt-4">
+            <Typical
+              steps={[
+                'A passionate Web Developer & Designer who brings creativity to code.',
+                2000,
+                'I specialize in Javascript, React, Node,Python and  Django, and modern web design principles. Check out my work and get in touch!',
+                3000,
+              ]}
+              wrapper="span"
+            />
+          </p>
                     <p className="text-md md:text-lg font-light text-gray-300">
-                        I specialize in <span className="font-semibold text-white">React, Node, Django</span>, and modern web design principles. Check out my work and get in touch!
+
+                  
+          
+
                     </p>
                     <div>
                     <Link
@@ -110,7 +111,7 @@ const LandingPage = () => {
                         smooth={true}
                         duration={800}
                         
-                        className="bg-blue-600 transition-all text-white font-semibold py-3 px-8 rounded-lg shadow-lg transform hover:scale-105 my-20 transition-colors cursor-pointer "
+                        className="bg-purple-600 transition-all text-white font-semibold py-3 px-8 rounded-lg shadow-lg transform hover:scale-105 my-20 transition-colors cursor-pointer hover:bg-blue-700 "
                     >
                         Contact Me
                     </Link></div>

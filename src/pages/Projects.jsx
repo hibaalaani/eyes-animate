@@ -1,10 +1,14 @@
 // pages/Projects.js
 import React, {useState, useEffect } from 'react';
 import ProjectCard from '../components/ProjectCard';
+import DadJokes from '../assets/DadJokes.jpg'
 import Gallery from '../assets/Gallery.png'
 import Candy from '../assets/Candy.png';
 import ColorGame from '../assets/gameColor.png';
+import BookStore from '../assets/bookStore.png';
 import Tgif from '../assets/Tgif.png';
+import Developer from '../assets/developer.jpg';
+
 import GitHub from '../assets/download.jpg';
 const Projects = () => {
 // const [projects, setProjects]= useState([])
@@ -30,6 +34,24 @@ const [isLoaded, setIsLoaded] = useState(false);
 // },[])
 
   const projects = [
+    {
+      title: 'Dad Jokes',
+      description: ' An interactive website designed for fun.Based on API request,',
+      imageUrl: DadJokes,
+      link: "https://dady-jokes.netlify.app",
+    },
+    {
+      title: 'Developer Connection App',
+      description: ' An interactive website designed to connect developers through their Github account',
+      imageUrl: Developer,
+      link: "https://secure-falls-25406.herokuapp.com/",
+    },
+    {
+      title: 'Book Store',
+      description: ' A website , provide books based on their titles and/or their writers , work with API req',
+      imageUrl: BookStore,
+      link: "https://book-store-react.netlify.app/",
+    },
     {
       title: 'Candy Color',
       description: ' An interactive website designed for a coffee shop.Based on the request of the client,',

@@ -16,7 +16,7 @@ const About = () => {
     
 
       {/* <div className="container mx-auto px-5"> */}
-        <h2 className="text-4xl font-bold text-center mb-10 ">About Me</h2>
+        {/* <h2 className="text-4xl font-bold text-center mb-10 ">About Me</h2> */}
         <div className="flex flex-col md:flex-row items-center">
           {/* Image Section */}
           <div className="w-full md:w-1/2">
@@ -32,7 +32,7 @@ const About = () => {
       
               
              <div className="text-writer">
-    Hello, I'm Hiba AlAani, a passionate web developer.
+    What's mean a passionate web developer.
   </div>
   <p className="about-paragraph">
     I build responsive and user-friendly websites. I have a background in frontend development, specializing in technologies such as React, Tailwind CSS, and JavaScript. I'm constantly exploring new ways to improve my skills and keep up with the latest trends in web development.

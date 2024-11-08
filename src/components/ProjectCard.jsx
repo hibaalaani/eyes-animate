@@ -56,7 +56,7 @@ const getStyle = () => {
           <p className="text-gray-600 text-sm mb-4">{description}</p>
           <Link target="_blank"
             to={link} 
-            className="inline-block px-4 py-2 text-white bg-blue-600 rounded-md shadow hover:bg-blue-700 transition-colors duration-300 ease-in-out"
+            className="inline-block px-4 py-2 text-white bg-purple-600 rounded-md shadow hover:bg-blue-700 transition-colors duration-300 ease-in-out"
           >
             View Project
           </Link>

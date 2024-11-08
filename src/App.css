@@ -141,7 +141,7 @@ section {
 
 /* Additional styles for buttons */
 button, .btn-link {
-  background-color: #3b82f6;
+  background-color: #8f09c0 ;
   color: #ffffff;
   padding: 10px 20px;
   border-radius: 8px;
@@ -198,7 +198,8 @@ button, .btn-link {
 }
 
 .navbar {
-  z-index: 90; /* Ensure the navbar stays on top */
+  /* Ensure the navbar stays on top */
+  z-index: 90; 
 background-color:  radial-gradient(circle, #ffffff33, transparent);
   position: fixed;
   top: 0;
@@ -214,7 +215,7 @@ background-color:  radial-gradient(circle, #ffffff33, transparent);
   transition: transform 0.1s ease;
   mix-blend-mode: overlay;
   transform: translate(-50%, -50%);
-   /*z-index: 1; Place it above background but below content */
+   /* z-index: 1; /* Place it above background but below content */
 }
 /* Hover Circle */
 .circle-effect {

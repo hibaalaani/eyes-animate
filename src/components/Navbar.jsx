@@ -21,7 +21,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar flex justify-between items-center px-10  shadow-md fixed w-full z-10">
+    <nav className="navbar flex justify-around items-center px-10  shadow-md fixed w-full z-10 bg-gradient-to-r from-indigo-700 ">
       <div className="">
         <ScrollLink className={linkClasses} to="/"><FaceSvg/></ScrollLink>
       </div>
@@ -71,7 +71,7 @@ const Navbar = () => {
 
       {/* Links for Mobile */}
       {isNavOpen && (
-        <div className="md:hidden absolute top-16 left-0 w-full bg-gray-800 p-5">
+        <div className="md:hidden absolute top-16 left-0 w-full bg-gradient-to-r from-indigo-500 p-5">
           <ul className="flex flex-col space-y-4">
             <li>
               <ScrollLink to="projects"  className={`${linkClasses} text-white hover:text-blue-400 transition-colors`} onClick={() => setIsNavOpen(false)}>
