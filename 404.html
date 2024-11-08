@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="refresh" content="0; url=/" />
+  <title>Redirecting...</title>
+</head>
+<body>
+  <script>
+    // Redirect to index.html for handling by React Router
+    const pathname = window.location.pathname;
+    const origin = window.location.origin;
+    window.location.replace(`${origin}/alaani/#${pathname}`);
+  </script>
+</body>
+</html>

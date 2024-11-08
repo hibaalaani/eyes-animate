@@ -1,0 +1,254 @@
+.about-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.text-writer {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: inline-block;
+    overflow: hidden;
+    white-space: wrap;
+    width: 100%;
+    /* Adjust for responsive width */
+    border-right: 3px solid;
+    /* Cursor effect */
+    animation: typing 3s steps(30, end) forwards, blink 0.75s step-end infinite;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: rgb(71, 59, 50);
+    }
+}
+
+
+/* Style for the paragraph after typing */
+
+.about-paragraph {
+    font-family: 'Arial', sans-serif;
+    color: #e0e0e0;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+/* Apply gradient background to the entire page */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: linear-gradient(135deg, #3b82f6, #9333ea);
+  background-size: 400% 400%;
+  animation: gradientMovement 20s ease infinite;
+}
+
+/* Gradient animation */
+@keyframes gradientMovement {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Wiggle animation */
+/* @keyframes wiggle-slow {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-2%); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes wiggle-medium {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5%); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes wiggle-fast {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8%); }
+  100% { transform: translateY(0); }
+}
+
+.animate-wiggle-slow {
+  animation: wiggle-slow 12s infinite alternate ease-in-out;
+}
+
+.animate-wiggle-medium {
+  animation: wiggle-medium 8s infinite alternate ease-in-out;
+}
+
+.animate-wiggle-fast {
+  animation: wiggle-fast 6s infinite alternate ease-in-out;
+} */
+
+/* Container with wiggle layers */
+/* .wiggly-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.wiggly-layer1 {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.wiggly-layer2 {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.wiggly-layer3 {
+  background: rgba(255, 255, 255, 0.1);
+} */
+
+/* Section spacing */
+section {
+  padding: 60px 20px;
+}
+
+/* Text color adjustments */
+.text-white {
+  color: #ffffff;
+}
+
+.text-dark {
+  color: #333333;
+}
+
+.text-gray {
+  color: #777777;
+}
+
+/* Additional styles for buttons */
+button, .btn-link {
+  background-color: #3b82f6;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+ button:hover, .btn-link:hover {
+  background-color: #9333ea ;
+}
+/* @keyframes wiggle-slow {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(10px); } /* Move 10px down */
+  /* 100% { transform: translateY(0); } 
+}*/
+
+/* @keyframes wiggle-medium {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(15px); } /* Move 15px down */
+  /* 100% { transform: translateY(0); } 
+} */
+
+/* @keyframes wiggle-fast {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(20px); } Move 20px down 
+  100% { transform: translateY(0); } 
+}
+.wiggle-slow {
+  animation: wiggle-slow 12s infinite alternate ease-in-out;
+} 
+
+.wiggle-medium {
+  animation: wiggle-medium 10s infinite alternate ease-in-out;
+}
+
+.wiggle-fast {
+  animation: wiggle-fast 8s infinite alternate ease-in-out;
+} */
+
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+#left-eye,
+#right-eye {
+  transition: transform 0.1s ease-out;
+}
+
+.navbar {
+  z-index: 90; /* Ensure the navbar stays on top */
+background-color:  radial-gradient(circle, #ffffff33, transparent);
+  position: fixed;
+  top: 0;
+}
+/* Gradient effect style */
+.gradient-circle {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffffff33, transparent);
+  pointer-events: none;
+  transition: transform 0.1s ease;
+  mix-blend-mode: overlay;
+  transform: translate(-50%, -50%);
+   /*z-index: 1; Place it above background but below content */
+}
+/* Hover Circle */
+.circle-effect {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px; /* Adjust the size as needed */
+  height: 200px;
+  background: radial-gradient(circle,#ffffff33, #ffffff33,#4f4f9253,#22224a53, transparent);
+  border-radius: 50%;
+  pointer-events: none; /* Prevent the circle from interfering with mouse events */
+  z-index: 30; /* Ensure it's on top of other content */
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease; /* Smooth follow effect */
+}
+/* Larger Circle */
+.circle-effect.large {
+  width: 80px; /* Adjust for larger size */
+  height: 80px;
+  background: rgba(255, 255, 255, 0.2); /* Slightly darker for emphasis */
+}
+
+
+
+
+.face-container {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  /* background-color: #f0f4ff; */
+}
+
+svg {
+  position: relative;
+  overflow: visible;
+}
