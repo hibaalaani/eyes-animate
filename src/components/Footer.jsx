@@ -3,7 +3,7 @@ import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className=" w-full footer-section text-white text-center p-4 fixed bottom-0 left-0 flex flex-col items-center space-y-3 md:space-y-1 md:flex-row md:justify-between bg-gray-800 shadow-md fixed w-full z-10">
+    <footer className=" w-full footer-section text-white text-center p-4 fixed bottom-0 left-0 flex flex-col items-center space-y-3 md:space-y-1 md:flex-row md:justify-around bg-gray-800 shadow-md fixed w-full z-10">
       {/* Copyright */}
       <p>© 2024 Hiba Alaani. All rights reserved.</p>
 

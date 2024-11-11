@@ -9,6 +9,7 @@ import WigglyBackground from "../components/WigglyBackground";
 import Ilistra from "../assets/woman.jpg"
 import FaceSvg from "./FaceSvg";
 import Typical from 'react-typical';
+import SkillsSection from "../components/SkillsSection";
 const LandingPage = () => {
   useEffect(() => {
     const face = document.getElementById("face");
@@ -71,20 +72,28 @@ const LandingPage = () => {
  
 <section className="fade-in container mx-auto flex flex-col items-start justify-center min-h-screen p-15">
   <div className="flex flex-col md:flex-row items-center items-center space-x-10">
+
+
+  <Element name="about"className="">
+
+<div className="fade-in flex flex-wrap justify-center gap-8">
+ <About />
+</div>
+</Element>
              {/* Right Image Section */}
-        <div className="relative w-1/2 h-1/2 md:w-80 md:h-80">
+        {/* <div className="relative w-1/2 h-1/2 md:w-80 md:h-80"> */}
           {/* Illustration */}
-          <img
+          {/* <img
             src={HeroImage} // Replace with actual path
             alt="Img of Hiba"
             className="w-full h-full"
             id="face"
           />
-         
+          */}
      
 
-      </div>
-                <div className="flex-1 text-left space-y-5 p-6 bg-opacity-30 rounded-xl text-white">
+      {/* </div> */}
+                {/* <div className="flex-1 text-left space-y-5 p-6 bg-opacity-30 rounded-xl text-white">
                 <h1 className="text-5xl font-bold">
             <Typical steps={['Hi, I\'m Hiba Alaani', 1000]} />
           </h1>
@@ -113,17 +122,12 @@ const LandingPage = () => {
                     >
                         Contact Me
                     </Link></div>
-                </div>
-           </div>
+                </div>*/}
+           </div> 
         </section>
-
+        <SkillsSection />
       {/* About Section */}
-      <Element name="about"className="">
-
-         <div className="fade-in flex flex-wrap justify-center gap-8">
-          <About />
-       </div>
-      </Element>
+   
 
       {/* Portfolio Projects Section */}
       <Element name="projects">

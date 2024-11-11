@@ -51,7 +51,7 @@ const Contact = () => {
         <h2 className="text-4xl font-bold text-center mb-10 text-white">Contact Me</h2>
         <form onSubmit={handleSubmit} className="max-w-lg mx-auto">
           <div className="mb-4">
-            <label htmlFor="name" className="block text-lg font-medium text-gray-400">Name</label>
+            <label htmlFor="name" className="block text-lg font-medium text-white">Name</label>
             <input 
               type="text" 
               id="name" 
@@ -63,7 +63,7 @@ const Contact = () => {
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="email" className="block text-lg font-medium text-gray-400">Email</label>
+            <label htmlFor="email" className="block text-lg font-medium text-white">Email</label>
             <input 
               type="email" 
               id="email" 
@@ -75,7 +75,7 @@ const Contact = () => {
             />
           </div>
           <div className="mb-6">
-            <label htmlFor="message" className="block text-lg font-medium text-gray-400">Message</label>
+            <label htmlFor="message" className="block text-lg font-medium text-white">Message</label>
             <textarea 
               id="message" 
               value={formData.message}
