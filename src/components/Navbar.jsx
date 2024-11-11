@@ -5,7 +5,7 @@ import FaceSvg from "../pages/FaceSvg";
 
 const Navbar = () => {
 
-  const linkClasses = "text-lg font-medium px-4 py-2 rounded-md transition-all duration-300  hover:text-purple-900 shadow hover:shadow-lg cursor-pointer";
+  const linkClasses = "text-lg font-medium px-4 py-2 rounded-md transition-all duration-300  shadow hover:shadow-lg cursor-pointer";
 
 
   const navigate = useNavigate();
@@ -41,7 +41,7 @@ const Navbar = () => {
       {/* Links for Desktop */}
       <ul className="hidden md:flex space-x-6">
         <li className='relative group'>
-          <ScrollLink to="projects" className= { `${linkClasses} text-white hover:text-blue-400 transition-colors `}>
+          <ScrollLink to="projects" className= { `${linkClasses} text-white hover:text-blue-200 transition-colors `}>
             Projects
           </ScrollLink>
           <span className="absolute bottom-0 left-0 w-full h-0.5 bg-transparent transition-all duration-300 group-hover:bg-white"></span>
