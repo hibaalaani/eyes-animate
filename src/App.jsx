@@ -53,22 +53,22 @@ function App() {
 
 
     <Router basename="/"> 
-   
+       {/* <WigglyBackground />  */}
    <Navbar />   
    <div className="circle-effect"></div>
 
 
     {/* Content Layer */}
-    {/* <div className="relative z-10"> */}
+    <div className="relative z-10">
 
       
       <Routes>
         <Route path="/" element={<LandingPage />} />
         {/* Add other routes here */}
       </Routes>
-      <WigglyBackground /> 
+      {/* <WigglyBackground />  */}
       <Footer />
-    {/* </div> */}
+    </div>
   </Router>
   
   );

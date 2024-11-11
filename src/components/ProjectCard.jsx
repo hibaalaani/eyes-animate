@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState , useRef } from "react";
 import { Link } from "react-router-dom";
 
 const ProjectCard = ({ title, description, imageUrl ,link , animationDirection }) => {
 
   const [isVisible, setIsVisible] = useState(false);
-
+  // const cardRef = useRef(null);
   useEffect(() => {
     // Trigger the visibility after a short delay to simulate load
     const timer = setTimeout(() => setIsVisible(true), 100);  
@@ -14,6 +14,28 @@ const ProjectCard = ({ title, description, imageUrl ,link , animationDirection }
 
 // Determine the inline styles based on the animation direction
 const getStyle = () => {
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(
+  //     (entries) => {
+  //       entries.forEach((entry) => {
+  //         if (entry.isIntersecting) {
+  //           entry.target.classList.add('animate-fadeInUp');
+  //           observer.unobserve(entry.target); // Unobserve after animation
+  //         }
+  //       });
+  //     },
+  //     { threshold: 0.1 } // Adjust as needed
+  //   );
+
+  //   if (cardRef.current) {
+  //     observer.observe(cardRef.current);
+  //   }
+
+  //   return () => observer.disconnect();
+  // }, []);
+
+
+
   switch (animationDirection) {
     case 'left':
       return {
@@ -56,7 +78,7 @@ const getStyle = () => {
           <p className="text-gray-600 text-sm mb-4">{description}</p>
           <Link target="_blank"
             to={link} 
-            className="inline-block px-4 py-2 text-white bg-purple-600 rounded-md shadow hover:bg-blue-700 transition-colors duration-300 ease-in-out"
+            className="inline-block px-4 py-2 text-white bg-indigo-600 rounded-md shadow hover:bg-blue-700 transition-colors duration-300 ease-in-out"
           >
             View Project
           </Link>

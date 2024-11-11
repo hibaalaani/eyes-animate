@@ -86,17 +86,15 @@ const LandingPage = () => {
       </div>
                 <div className="flex-1 text-left space-y-5 p-6 bg-opacity-30 rounded-xl text-white">
                 <h1 className="text-5xl font-bold">
-            <Typical steps={['Hi, I\'m Hiba Alaani', 1000]} wrapper="span" />
+            <Typical steps={['Hi, I\'m Hiba Alaani', 1000]} />
           </h1>
           <p className="text-xl mt-4">
             <Typical
               steps={[
-                'A passionate Web Developer & Designer who brings creativity to code.',
-                2000,
-                'I specialize in Javascript, React, Node,Python and  Django, and modern web design principles. Check out my work and get in touch!',
-                3000,
+                'A passionate Web Developer & Designer who brings creativity to code. I specialize in Javascript, React, Node,Python and  Django, and modern web design principles. Check out my work and get in touch!',
+                3000
               ]}
-              wrapper="span"
+             
             />
           </p>
                     <p className="text-md md:text-lg font-light text-gray-300">
@@ -111,7 +109,7 @@ const LandingPage = () => {
                         smooth={true}
                         duration={800}
                         
-                        className="bg-purple-600 transition-all text-white font-semibold py-3 px-8 rounded-lg shadow-lg transform hover:scale-105 my-20 transition-colors cursor-pointer hover:bg-blue-700 "
+                        className="bg-indigo-600 transition-all text-white font-semibold py-3 px-8 rounded-lg shadow-lg transform hover:scale-105 my-20 transition-colors cursor-pointer hover:bg-blue-700 "
                     >
                         Contact Me
                     </Link></div>

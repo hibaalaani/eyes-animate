@@ -30,17 +30,17 @@ module.exports = {
           "0%": { transform: "translateY(300px)", opacity: "0" }, // Larger movement from bottom
           "100%": { transform: "translateY(0)", opacity: "1" }, // End state
         },
-        wiggleSlow: {
+         wiggleSlow: {
           "0%, 100%": { transform: "translateY(0)" },
-          "50%": { transform: "translateY(20px)" },
+          "50%": { transform: "translateY(50px)" }, // Increased to 50px
         },
         wiggleMedium: {
           "0%, 100%": { transform: "translateY(0)" },
-          "50%": { transform: "translateY(30px)" },
+          "50%": { transform: "translateY(70px)" }, // Increased to 70px
         },
         wiggleFast: {
           "0%, 100%": { transform: "translateY(0)" },
-          "50%": { transform: "translateY(40px)" },
+          "50%": { transform: "translateY(90px)" }, // Increased to 90px
         },
       },
       animation: {

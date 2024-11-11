@@ -55,9 +55,11 @@ body, html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background: linear-gradient(135deg, #3b82f6, #9333ea);
-  background-size: 400% 400%;
-  animation: gradientMovement 20s ease infinite;
+  background: linear-gradient(135deg, #3b82f6, #9131eb, #ff7e5f, #feb47b), 
+  linear-gradient(225deg, #a1c4fd, #c2e9fb, #667eea, #764ba2);
+  background-size: 200% 200%;
+  animation: gradientMovement 15s ease-in-out infinite, secondaryGradient 20s ease-in-out infinite;
+
 }
 
 /* Gradient animation */
@@ -66,7 +68,11 @@ body, html {
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
-
+@keyframes secondaryGradient {
+  0% { background-position: 50% 0%; }
+  50% { background-position: 50% 100%; }
+  100% { background-position: 50% 0%; }
+}
 /* Wiggle animation */
 /* @keyframes wiggle-slow {
   0% { transform: translateY(0); }
@@ -204,7 +210,7 @@ background-color:  radial-gradient(circle, #ffffff33, transparent);
   position: fixed;
   top: 0;
 }
-/* Gradient effect style */
+/* Gradient effect style for the mouse */
 .gradient-circle {
   position: absolute;
   width: 200px;
@@ -253,3 +259,4 @@ svg {
   position: relative;
   overflow: visible;
 }
+
