@@ -8,7 +8,7 @@ import Experience from "./Experience";
 import WigglyBackground from "../components/WigglyBackground";
 import Ilistra from "../assets/woman.jpg"
 import FaceSvg from "./FaceSvg";
-import Typical from 'react-typical';
+// import Typical from 'react-typical';
 import SkillsSection from "../components/SkillsSection";
 const LandingPage = () => {
   useEffect(() => {
