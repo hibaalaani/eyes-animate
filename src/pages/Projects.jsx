@@ -5,7 +5,7 @@ import DadJokes from '../assets/DadJokes.jpg'
 import Gallery from '../assets/Gallery.png'
 import Candy from '../assets/Candy.png';
 import ColorGame from '../assets/gameColor.png';
-import BookStore from '../assets/bookStore.png';
+import BookStore from '../assets/BookStore.png';
 import Tgif from '../assets/Tgif.png';
 import Developer from '../assets/developer.jpg';
 
