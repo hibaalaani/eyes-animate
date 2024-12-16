@@ -22,7 +22,7 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:8000/api/send-contact-message/', {
+      const response = await fetch('/.netlify/functions/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
