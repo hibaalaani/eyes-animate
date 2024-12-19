@@ -18,6 +18,12 @@ const LandingPage = () => {
 
     const updateEyes = (e) => {
       const { clientX, clientY } = e;
+ 
+      if (face) {
+      
+  
+      
+
       const { left, top, width, height } = face.getBoundingClientRect();
       const faceCenterX = left + width / 2;
       const faceCenterY = top + height / 2;
@@ -40,6 +46,7 @@ const LandingPage = () => {
     return () => {
       document.removeEventListener("mousemove", updateEyes);
     };
+  }
   }, []);
 
   useEffect(() => {

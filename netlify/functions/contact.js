@@ -14,14 +14,14 @@ exports.handler = async (event) => {
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: process.env.EMAIL_USER,
-      pass: process.env.EMAIL_PASS,
+      user: 'alaani.hiba@gmail.com',
+      pass:'uleewwcqdmjwnyqu',
     },
   });
 
   const mailOptions = {
     from: email,
-    to: process.env.RECIPIENT_EMAIL,
+    to: 'alaani.hiba@gmail.com',
     subject: `New message from ${name}`,
     text: message,
   };

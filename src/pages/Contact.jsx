@@ -40,6 +40,8 @@ const Contact = () => {
         setError(data.error || 'Failed to send message.');
       }
     } catch (err) {
+      console.error('Error sending email:', error); // Logs detailed error in Netlify logs
+     
       setError('An error occurred. Please try again later.');
     }
   };

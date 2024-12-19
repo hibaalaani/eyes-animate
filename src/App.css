@@ -15,10 +15,10 @@
     border-right: 3px solid;
     /* Cursor effect */
     animation: typing 3s steps(30, end) forwards, blink 0.75s step-end infinite;
-    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    background: linear-gradient(90deg, #0820a5, #0c049a);
     background-clip: text;
     -webkit-background-clip: text;
-    color: transparent;
+    color: white;
 }
 
 @keyframes typing {
@@ -55,8 +55,8 @@ body, html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background: linear-gradient(135deg, #3b82f6, #9131eb, #ff7e5f, #feb47b), 
-  linear-gradient(225deg, #a1c4fd, #c2e9fb, #667eea, #764ba2);
+  background: linear-gradient(135deg, #3b82f6, #0f0f29, #0d37abc3, #7bb4fe), 
+  linear-gradient(225deg, #a1c4fd, #c2e9fb, #667eea, #08064a);
   background-size: 200% 200%;
   animation: gradientMovement 15s ease-in-out infinite, secondaryGradient 20s ease-in-out infinite;
 
@@ -147,7 +147,7 @@ section {
 
 /* Additional styles for buttons */
 button, .btn-link {
-  background-color: #feb47b ;
+  background-color: #150f0a ;
   color: #ffffff;
   padding: 10px 20px;
   border-radius: 8px;
@@ -155,7 +155,7 @@ button, .btn-link {
 }
 
  button:hover, .btn-link:hover {
-  background-color: #9333ea ;
+  background-color: #0a0839 ;
 }
 /* @keyframes wiggle-slow {
   0% { transform: translateY(0); }

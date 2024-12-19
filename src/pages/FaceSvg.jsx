@@ -4,12 +4,17 @@ function FaceSvg() {
     useEffect(()=>{
         document.addEventListener('mousemove', (e) => {
             const face = document.querySelector('.face-container');
+          
+            if (face) {
+              const { left, top, width, height } = face.getBoundingClientRect();
+          
+
             const leftPupil = document.getElementById('left-pupil');
             const rightPupil = document.getElementById('right-pupil');
             const leftEyebrow = document.getElementById('left-eyebrow');
             const rightEyebrow = document.getElementById('right-eyebrow');
         
-            const { left, top, width, height } = face.getBoundingClientRect();
+          
             const centerX = left + width / 2;
             const centerY = top + height / 2;
             const angleX = (e.clientX - centerX) / 30; // adjust sensitivity
@@ -24,11 +29,13 @@ function FaceSvg() {
             // Move eyebrows
             leftEyebrow.setAttribute('y', 75 + angleY * 0.5); // slight movement
             rightEyebrow.setAttribute('y', 75 + angleY * 0.5);
-        });
+        }
+      }
+      );
         
     },[])
   return (
-    <div><div class="face-container">
+    <div><div className="face-container">
     <svg viewBox="0 0 200 200" width="50" height="50">
     
       <circle cx="100" cy="100" r="90" fill="#feb47b"/>
