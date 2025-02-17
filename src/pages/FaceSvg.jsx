@@ -38,7 +38,7 @@ function FaceSvg() {
     <div><div className="face-container">
     <svg viewBox="0 0 200 200" width="50" height="50">
     
-      <circle cx="100" cy="100" r="90" fill="#feb47b"/>
+      <circle cx="100" cy="100" r="90" fill="#ff9545"/>
       
    
       <circle id="left-eye" cx="70" cy="90" r="10" fill="#fff"/>
