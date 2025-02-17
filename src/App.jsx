@@ -59,7 +59,7 @@ function App() {
 
 
     {/* Content Layer */}
-    <div className="relative z-10">
+    <div className="">
 
       
       <Routes>

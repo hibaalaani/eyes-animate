@@ -25,7 +25,7 @@ const InteractiveGradientEffect = ({ children }) => {
       ></div>
 
       {/* Content */}
-      <div className="relative z-10 p-8 text-white">
+      <div className=" p-8 text-white">
         {children}
       </div>
     </div>
