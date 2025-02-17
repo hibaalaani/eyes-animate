@@ -51,7 +51,7 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <section className="fade-in container my-20 py-20 text-white ">
+    <section  id="experience" className="fade-in container my-20 py-20 text-white ">
     
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-4xl font-bold text-center mb-10">Experience</h2>

@@ -109,7 +109,8 @@ const [isLoaded, setIsLoaded] = useState(false);
   };
 
   return (
-    <section className="fade-in min-h-screen container my-20 py-20 text-white ">
+
+    <section  id="projects" className="fade-in min-h-screen container my-20 py-20 text-white ">
     
       <h2 className="text-4xl font-bold text-center mb-10">Projects</h2>
       <div className=" mx-auto p-4">

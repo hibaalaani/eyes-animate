@@ -52,15 +52,11 @@ const Navbar = () => {
           </ScrollLink>
           <span className="absolute bottom-0 left-0 w-full h-0.5 bg-transparent transition-all duration-300 group-hover:bg-white "></span>
         </li>
-        {/* <li className='relative group'>
-          <ScrollLink to="about"  className={`${linkClasses} text-white hover:text-blue-400 transition-colors `}>
-            About
-          </ScrollLink>
-          <span className="absolute bottom-0 left-0 w-full h-0.5 bg-transparent transition-all duration-300 group-hover:bg-white"></span>
-        </li> */}
+      
         
           <li className='relative group'>
-            <ScrollLink to="contact" smooth={true} duration={500}  className={`${linkClasses} text-white hover:text-blue-400 transition-colors `}>
+            <ScrollLink to="contact" smooth={true} duration={500} spy={true} 
+  hashSpy={true}  className={`${linkClasses} text-white hover:text-blue-400 transition-colors `}>
               Contact
             </ScrollLink>
             <span className="absolute bottom-0 left-0 w-full h-0.5 bg-transparent transition-all duration-300  group-hover:bg-white"></span>
